@@ -8,6 +8,9 @@
            fetch="git://github.com/"
            review="https://gerrit.slimroms.net/"/>
 
+  <remote  name="TM"
+          fetch="https://github.com/TheMuppets/" />
+
   <default revision="refs/tags/android-4.4.2_r2"
            remote="aosp"
            sync-j="4" />
@@ -464,5 +467,12 @@
 
   <!-- CyanogenMod qrngd -->
   <project path="external/qrngd" name="CyanogenMod/android_external_qrngd" remote="github" revision="cm-11.0" />
+
+  <!-- Otter -->
+<project path="vendor/amazon" name="proprietary_vendor_amazon.git" remote="TM" revision="cm-11.0" />
+<project path="device/amazon/otter" name="CyanogenMod/android_device_amazon_otter" remote="github" revision="cm-11.0" />
+<project path="device/amazon/otter-common" name="CyanogenMod/android_device_amazon_otter-common" remote="github" revision="cm-11.0" />
+<project path="device/amazon/omap4-common" name="CyanogenMod/android_device_amazon_omap4-common" remote="github" revision="cm-11.0" />
+<project path="kernel/amazon/otter-common" name="CyanogenMod/android_kernel_amazon_otter-common" remote="github" revision="cm-11.0" />
 
 </manifest>
